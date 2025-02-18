@@ -2,6 +2,7 @@ import { Separator } from "./ui/separator"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { IoCart, IoHeart } from "react-icons/io5"
+import { Link } from "react-router-dom"
 
 
 const Header = () => {
@@ -16,13 +17,16 @@ const Header = () => {
       {/* Buttons*/}
       <div className="flex space-x-4 h-5 items-center">
         <div className="flex space-x-2">
-          <Button size="icon" variant="ghost"><IoCart className="w-6 h-6" /></Button>
+          <Link to="/cart">
+            <Button size="icon" variant="ghost"><IoCart className="w-6 h-6" /></Button>
+          </Link>
+
           <Button size="icon" variant="ghost"><IoHeart className="w-6 h-6" /></Button>
         </div>
 
         <Separator orientation="vertical" className="h-full"></Separator>
 
-        <div className="flex space-x-2"> 
+        <div className="flex space-x-2">
           <Button>Log in</Button>
           <Button variant="outline">Sign Up</Button>
         </div>
