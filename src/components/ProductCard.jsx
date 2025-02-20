@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { IoIosAdd, IoIosRemove } from "react-icons/io"
 import { Input } from "./ui/input"
@@ -27,6 +27,24 @@ export const ProductCard = (props) => {
         }
 
     }
+
+    // Mount
+    // useEffect(() => {
+    //     alert("Component did mount")
+    // }, [])
+
+    // Update/Mount
+    // useEffect(() => {
+    //     alert("Component did update")
+    // }, [manyProduct])
+
+    // unmount
+    // useEffect(() => {
+    //     return () => {
+    //         alert("Component unmount")
+    //     }
+    // }, [])
+
     return (
         <div className="p-4 border rounded-md md:max-w-96 flex flex-col gap-4">
             <div className="aspect-square w-full overflow-hidden">

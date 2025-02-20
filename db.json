@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/fdcf591cc8bb49df622e0a0198e61233c7005de3_xxl-1.jpg",
+            "name": "Dark Blue T-Shirt",
+            "price": 1000000,
+            "stocks": 10,
+            "id": 1
+        },
+        {
+            "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/zoom/78502115352b172788cb416a06bc072baad7bf0e_xxl-1.jpg",
+            "name": "Denim Jacket",
+            "price": 20000000,
+            "stocks": 20,
+            "id": 2
+        }
+    ],
+    "user": [
+        {
+            "karakter": "Naruto"
+        },
+        {
+            "karakter": "Sasuke"
+        }
+    ]
+}
