@@ -11,7 +11,7 @@ const HomePage = () => {
 
     const products = manyProduct.map((product) => {
         return (
-            <ProductCard image={product.imageUrl} productName={product.name} price={product.price} stocks={product.stocks} />
+            <ProductCard image={product.imageUrl} productName={product.name} price={product.price} stocks={product.stocks} id={product.id}/>
         )
     })
 

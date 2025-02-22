@@ -2,9 +2,10 @@ import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { IoIosAdd, IoIosRemove } from "react-icons/io"
 import { Input } from "./ui/input"
+import { Link } from "react-router-dom"
 
 export const ProductCard = (props) => {
-    const { image, price, productName, stocks } = props
+    const { image, price, productName, stocks, id } = props
     const [manyProduct, setManyProduct] = useState(0)
 
     const addToCard = () => {
@@ -47,14 +48,14 @@ export const ProductCard = (props) => {
 
     return (
         <div className="p-4 border rounded-md md:max-w-96 flex flex-col gap-4">
-            <div className="aspect-square w-full overflow-hidden">
+            <Link to={`/product/${id}`} className="aspect-square w-full overflow-hidden">
                 <img className="w-full" src={image} alt="product" />
-            </div>
-            <div>
+            </Link>
+            <Link to={`/product/${id}`}>
                 <p className="text-md">{productName}</p>
                 <p className="text-xl">Rp {price.toLocaleString('id-ID')}</p>
                 <p className="text-muted-foreground text-sm">In Stock: {stocks}</p>
-            </div>
+            </Link>
             <div className="flex flex-col gap-2">
                 <div className="flex justify-between items-center">
                     <Button disabled={manyProduct == 0} onClick={decreaseProduct} size="icon" variant="ghost">

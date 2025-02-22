@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className='h-16 border border-b flex justify-between items-center px-8'>
       {/* BRAND*/}
-      <p className="text-2xl font-bold hover:cursor-pointer">Zidan Creation</p>
+      <Link to="/" className="text-2xl font-bold hover:cursor-pointer">Zidan Creation</Link>
 
       {/*Search Bar */}
       <Input className="max-w-[600px]" placeholder="Search Product" />
