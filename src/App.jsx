@@ -10,6 +10,7 @@ import ProductDetailPage from "./pages/ProductDetailPage"
 import ProductManagementPage from "./pages/admin/ProductManagementPage"
 import CreateProductPage from "./pages/admin/CreateProductPage"
 import EditProductPage from "./pages/admin/EditProductPage"
+import CounterPage from "./pages/CounterPage"
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/login" Component={LoginPage} />
         <Route path="/signup" Component={SignUpPage} />
         <Route path="/product/:productId" Component={ProductDetailPage} />
+        <Route path="/counter" Component={CounterPage}/>
         <Route path="/admin">
           <Route path="products" Component={ProductManagementPage} />
           <Route path="products/create" Component={CreateProductPage}/>
