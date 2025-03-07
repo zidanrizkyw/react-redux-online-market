@@ -1,10 +1,11 @@
+import { SignInPage } from '@/components/guard/SignInPage'
 import React from 'react'
 
 const CartPage = () => {
   return (
-    <div>
+    <SignInPage>
       <h1>Cart Page</h1>
-    </div>
+    </SignInPage>
   )
 }
 

@@ -27,6 +27,7 @@ import { IoAdd } from 'react-icons/io5'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Checkbox } from '@/components/ui/checkbox'
+import { AdminPage } from '@/components/guard/AdminPage'
 
 const ProductManagementPage = () => {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -124,7 +125,7 @@ const ProductManagementPage = () => {
     }, [])
 
     return (
-        <div>
+        <AdminPage>
             <AdminLayout
                 title="Product Management Page"
                 description="Managing Our Products"
@@ -209,7 +210,7 @@ const ProductManagementPage = () => {
                     </PaginationContent>
                 </Pagination>
             </AdminLayout>
-        </div>
+        </AdminPage>
     )
 }
 

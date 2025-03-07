@@ -1,4 +1,5 @@
 import { ProductForm } from "@/components/forms/ProductForm"
+import { AdminPage } from "@/components/guard/AdminPage"
 import { AdminLayout } from "@/components/layout/AdminLayout"
 import { AxiosInstance } from "@/lib/axios"
 import { useEffect, useState } from "react"
@@ -50,25 +51,28 @@ const EditProductPage = () => {
     }, [])
 
     return (
-        <AdminLayout title="Edit Product" description="Editing Product">
-            <div className="flex justify-center">
-                {
-                    product.id ? (
-                        <ProductForm
-                            onSubmit={handleEditProduct}
-                            loadingState={editProductIsLoading}
-                            titleForm={`Edit Product ${product.name}`}
-                            buttonField="Edit Product"
-                            defaultName={product.name}
-                            defaultPrice={product.price}
-                            defaultStock={product.stocks}
-                            defaultImageUrl={product.imageUrl}
-                        />
-                    ) : null
-                }
+        <AdminPage>
+            <AdminLayout title="Edit Product" description="Editing Product">
+                <div className="flex justify-center">
+                    {
+                        product.id ? (
+                            <ProductForm
+                                onSubmit={handleEditProduct}
+                                loadingState={editProductIsLoading}
+                                titleForm={`Edit Product ${product.name}`}
+                                buttonField="Edit Product"
+                                defaultName={product.name}
+                                defaultPrice={product.price}
+                                defaultStock={product.stocks}
+                                defaultImageUrl={product.imageUrl}
+                            />
+                        ) : null
+                    }
 
-            </div>
-        </AdminLayout>
+                </div>
+            </AdminLayout>
+        </AdminPage>
+
     )
 }
 

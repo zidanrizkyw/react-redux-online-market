@@ -3,9 +3,22 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { IoCart, IoHeart } from "react-icons/io5"
 import { Link } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
 
 
 const Header = () => {
+  const userSelector = useSelector((state) => state.user)
+  const dispatch = useDispatch()
+
+  const handleLogOut = () => {
+    // 1. Remove local storage
+    // 2. Reset user slice
+    localStorage.removeItem("current-user")
+    dispatch({
+      type: "USER_LOGOUT"
+    })
+
+  }
   return (
     <header className='h-16 border border-b flex justify-between items-center px-8'>
       {/* BRAND*/}
@@ -26,9 +39,19 @@ const Header = () => {
 
         <Separator orientation="vertical" className="h-full"></Separator>
 
-        <div className="flex space-x-2">
-          <Button>Log in</Button>
-          <Button variant="outline">Sign Up</Button>
+        <div className="flex space-x-2 items-center">
+          {
+            userSelector.id ?
+              <>
+                <p>Hello {userSelector.username} ({userSelector.role})</p>
+                <Button onClick={handleLogOut} variant='destructive'>Log Out</Button>
+              </>
+              :
+              <>
+                <Link to='/login'><Button>Log in</Button></Link>
+                <Link to='/register'><Button variant="outline">Sign Up</Button></Link>
+              </>
+          }
         </div>
 
       </div>

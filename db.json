@@ -15,95 +15,115 @@
       "id": "2"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/fa4e0ab94fdc2f883a283283377f6ea95eed5c24_xxl-1.jpg",
       "name": "White Sneakers",
       "price": 2500000,
       "stocks": 25,
       "id": "4"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Red Baseball Cap",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/e27f90e9a2ef07b593bd41dbe71184ef46d10609_xxl-1.jpg",
+      "name": "Cotton Shirt Muscle Fit",
       "price": 500000,
       "stocks": 30,
       "id": "6"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/694188e9f849f89058776d3d3c79ab72a2f7809a_xxl-1.jpg",
       "name": "Leather Belt",
       "price": 700000,
       "stocks": 40,
       "id": "7"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Black Sunglasses",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/8e115f961645e965613fce3a08d69341f43a1dd6_xxl-1.jpg",
+      "name": "Regular Fit Linen trousers",
       "price": 1800000,
       "stocks": 22,
       "id": "8"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Brown Leather Wallet",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/a352e006cd1564706c79ee7775ff8b5bceb03023_xxl-1.jpg",
+      "name": "Regular Fit Linen-blend trousers",
       "price": 900000,
       "stocks": 35,
       "id": "9"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Classic Wristwatch",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/080e1a0a4caacc7b724b4a063c0eaf97adeab08c_xxl-1.jpg",
+      "name": "Canvas shopper",
       "price": 3500000,
       "stocks": 12,
       "id": "10"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Brown Chelsea Boots",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/57584eb8b231b5fa38b5c3c12bfa1d57ca3cd174_xxl-1.jpg",
+      "name": "Canvas bottle bag",
       "price": 3200000,
       "stocks": 14,
       "id": "11"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Cotton Scarf",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/3fd6c3a6d7cc73953be7cbaff47e4b95d276a0a6_xxl-1.jpg",
+      "name": "Sunglasses with storage pouch",
       "price": 600000,
       "stocks": 28,
       "id": "12"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Canvas Backpack",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/cad9228ddf9fd4488ff24cae7243cfdb1c37aba1_xxl-1.jpg",
+      "name": "Rhinestone-embellished safety pin earrings",
       "price": 2800000,
       "stocks": 20,
       "id": "13"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "White Dress Shirt",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/b9c556e14f2a7f1be19a845739eef021933d4bf5_xxl-1.jpg",
+      "name": "Rhinestone-embellished ring",
       "price": 1600000,
       "stocks": 17,
       "id": "14"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Slim Fit Jeans",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6ced1eb1255e51da51a19d1621d263d9aba9a7e5_xxl-1.jpg",
+      "name": "Wool-blend pleat-neckline jacket",
       "price": 2100000,
       "stocks": 25,
       "id": "15"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Grey Blazer",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/1e9517cde826779fc1e0b7d110f7b07c76235fe0_xxl-1.jpg",
+      "name": "Medium Support Sports bra in DryMove",
       "price": 4500000,
       "stocks": 10,
       "id": "16"
     },
     {
-      "imageUrl": "https://placehold.jp/396x594.png",
-      "name": "Wool Beanie",
+      "imageUrl": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/8ee2fd2de3f916940b5f0d930c26b027795ab773_xxl-1.jpg",
+      "name": "Medium Support Sports bra in DryMove",
       "price": 450000,
       "stocks": 33,
       "id": "17"
+    }
+  ],
+  "user": [
+    {
+      "id": "9b3e",
+      "username": "zidan",
+      "password": "zidanganteng123",
+      "role": "user"
+    },
+    {
+      "id": "aff7",
+      "username": "rizky",
+      "password": "rizky777",
+      "role": "user"
+    },
+    {
+      "id": "1c2c",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
     }
   ]
 }

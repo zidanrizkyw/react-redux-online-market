@@ -3,6 +3,7 @@ import { AxiosInstance } from '@/lib/axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ProductForm } from '@/components/forms/ProductForm'
+import { AdminPage } from '@/components/guard/AdminPage'
 
 
 const CreateProductPage = () => {
@@ -28,7 +29,7 @@ const CreateProductPage = () => {
 
     }
     return (
-        <div>
+        <AdminPage>
             <AdminLayout
                 title="Create product Page"
                 description="Add New Products"
@@ -37,7 +38,7 @@ const CreateProductPage = () => {
                     <ProductForm onSubmit={handleCreateProduct} loadingState={createProductIsLoading} titleForm="Add a new product" buttonField="Create Product"/>
                 </div>
             </AdminLayout>
-        </div>
+        </AdminPage>
     )
 }
 
